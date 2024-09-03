@@ -1,7 +1,5 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const Issue = require('../models/Issue');
-const Project = require('../models/Project');
 
 router.get('/create/:projectId', (req, res) => {
     const projectId = req.params.projectId;
